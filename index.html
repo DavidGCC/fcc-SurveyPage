@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Web Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Student Satisfication Survey">
+        <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wholeGroup">
+        <header>
+            <h1 id="title" class="center">Student Satisfication Survey</h1>
+            <p id="description" class="center">Thank you for taking time to complete our survey</p>
+        </header>
+        <form id="survey-form">
+            <div class="group">
+                <label id="name-label" for="name" class="labelStyle">Name</label>
+                <input type="text" id="name" name="name"  class="inputStyle" placeholder="Enter Your Name Here" required>
+            </div>
+            <div class="group">
+                <label id="email-label" for="email" class="labelStyle">Email</label>
+                <input type="email" id="email" name="email"  class="inputStyle" placeholder="Enter Your Email Here"required>
+            </div>
+            <div class="group">
+                <label id="number-label" for="number" class="labelStyle">Age</label>
+                <input type="number" id="number" name="age"  class="inputStyle" placeholder="Enter Your Age Here" min="1" max="999" required>
+            </div>
+            <div class="group">
+                <label for="dropdown-label" class="labelStyle">How Long Have You Been A Student</label>
+                <select id="dropdown" class="dropdownStyle">
+                    <option value=" " disabled selected>Select Years Active</option>
+                    <option name="0year" value="0">Less Than 1 Year</option>
+                    <option name="1year" value="1">1 Year</option>
+                    <option name="2year" value="2">2 Years</option>
+                    <option name="3year" value="3">3 Years</option>
+                    <option name="4year" value="4">4 Years</option>
+                </select>
+            </div>
+            <div class="radioGroup">
+                <label for="professors" class="headerLabel center">How well do the professors teach at this university?</label>
+                <div class="radioMainGroup">
+                    <div class="radioContentGroup">
+                        <input id="ExtremelyWell" type="radio" name="professors" value="Extremely Well" class="radioStyle">
+                        <label for="ExtremelyWell">Extremely Well</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="VeryWell" type="radio" name="professors" value="Very Well" class="radioStyle">
+                        <label for="VeryWell">Very Well</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="SomewhatWell" type="radio" name="professors" value="Somewhat Well" class="radioStyle">
+                        <label for="SomewhatWell">Somewhat Well</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="NotSoWell" type="radio" name="professors" value="Not So Well" class="radioStyle">
+                        <label for="NotSoWell">Not so Well</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="NotAtAllWell" type="radio" name="professors" value="Not At All Well" class="radioStyle">
+                        <label for="NotAtAllWell">Not at all Well</label>
+                    </div>
+                </div>  
+            </div>
+            <div class="radioGroup">
+                <label for="campus" class="headerLabel center">How Satisfying Is Campus Infrasturcutre To You?</label>
+                <div class="radioMainGroup">
+                    <div class="radioContentGroup">
+                        <input id="ExtremelySatisfying" type="radio" name="campus" value="Extremely Satisfying" class="radioStyle">
+                        <label for="ExtremelySatisfying">Extremely Satisfying</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="VerySatisfying" type="radio" name="campus" value="Very Satisfying" class="radioStyle">
+                        <label for="VerySatisfying">Very Satisfying</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="SomewhatSatisfying" type="radio" name="campus" value="Somewhat Satisfying" class="radioStyle">
+                        <label for="SomewhatSatisfying">Somewhat Satisfying</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="NotSoSatisfying" type="radio" name="campus" value="Not So Satisfying" class="radioStyle">
+                        <label for="NotSoSatisfying">Not so Satisfying</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="NotAtAllSatisfying" type="radio" name="campus" value="Not At All Satisfying" class="radioStyle">
+                        <label for="NotAtAllSatisfying">Not at all Satisfying</label>
+                    </div>
+                </div>  
+            </div>
+            <div class="radioGroup">
+                <label for="campus" class="headerLabel center">Which Subjects Are You Interested In?</label>
+                <div class="radioMainGroup">
+                    <div class="radioContentGroup">
+                        <input id="Calculus" type="checkbox" name="subject" value="Calculus" class="radioStyle">
+                        <label for="Calculus">Calculus</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="DiscMath" type="checkbox" name="subject" value="Discrete Mathematics" class="radioStyle">
+                        <label for="DiscMath">Discrete Mathematics</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="English" type="checkbox" name="subject" value="English" class="radioStyle">
+                        <label for="English">English</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="Programming" type="checkbox" name="subject" value="Programming" class="radioStyle">
+                        <label for="Programming">Programming</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="CompArch" type="checkbox" name="subject" value="Computer Architecture" class="radioStyle">
+                        <label for="CompArch">Computer Architecture</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="History" type="checkbox" name="subject" value="History" class="radioStyle">
+                        <label for="History">History</label>
+                    </div>
+                    <div class="radioContentGroup">
+                        <input id="DataAnalysis" type="checkbox" name="subject" value="Data Analysis" class="radioStyle">
+                        <label for="DataAnalysis">Data Analysis</label>
+                    </div>
+                </div>  
+            </div>
+            <div class="group">
+                <label for="AdditionalComments" class="labelStyle">What Would You Like To Improve In Your University?</label>
+                <div class="textareaDiv">
+                    <textarea id="AdditionalComments" class="textareaStyle"></textarea>
+                </div>
+            </div>
+            <div class="group">
+                <input type="submit" id="submit" name="submit" class="submitStyle" value="Confirm">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
