@@ -28,7 +28,7 @@ html {
 } */
 body {
     background-color: var(--main-color-darkblue);
-    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("https://raw.githubusercontent.com/DavidGCC/fcc-SurveyPage/master/resources/images/background.png");
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("https://raw.githubusercontent.com/DavidGCC/fcc-SurveyPage/master/resources/images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
